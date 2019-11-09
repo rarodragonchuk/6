@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>DRAGONCHUK</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <base target="_blank"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="fav/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+<!-- <script src="https://kit.fontawesome.com/c7875eee50.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all">
+<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"> -->
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script   src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+    <script src="js/jquery.maskedinput.min.js" defer></script>
+    <script src="js/jquery.validate.min.js" defer></script>
+
+    <script src="js/burger.js" defer></script>
+    <script src="js/form.js" defer></script>
+
+  </head>
+         <body>
+              <header id="header" class="header">
+                  <div class="fixed-container header__container ">
+
+                    <button class="burger" type="button" aria-label="menu">
+                      <span></span>
+                      <span></span>
+        							<span></span>
+        				    </button>
+
+                  <nav class="menu">
+            			<ul>
+            				<li><a href="#" class="menu__link">Услуги</a></li>
+            				<li><a href="#" class="menu__link menu__link--active">Портфолио</a></li>
+            				<li><a href="#" class="menu__link">Стоимость</a></li>
+            			</ul>
+            		  </nav>
+
+              <a href="tel:+7((499)955-55-77" class="header__phone ">+7(499)955-55-77</a>
+              <button type="button" name="button" class="button button--transperent button--pop-up">Заказать звонок</button>
+              <button type="button" name="button" class="button--calling button--pop-up"></button>
+              </div>
+              </header>
+
+
+     <main>
+       <div class="pop-up">
+         <form id="form" class="pop-up__form">
+
+          <input type="hidden" name="progect_name" value="Тест">
+          <input type="hidden" name="admin_email" value="raroastrology@gmail.com">
+          <input type="hidden" name="form_subject" value="Тема">
+
+           <button class="pop-up__close" type="button" aria-label="close">
+             <span></span>
+             <span></span>
+           </button>
+           <h1 class="h h--3">Форма</h1>
+           <label class="pop-up__form_label">
+             <span class="pop-up__form_name">Ваше имя</span>
+             <input class="pop-up__form_input"  type="text" name="имя">
+           </label>
+           <label class="pop-up__form_label">
+             <span class="pop-up__form_name">Номер телефона</span>
+             <input class="pop-up__form_input" id="phone" type="tel" name="телефон" placeholder="+7 (___) __-__-___">
+           </label>
+           <label class="pop-up__form_label">
+             <span class="pop-up__form_name">Мейл</span>
+             <input id="cemail" class="pop-up__form_input" type="email" name="мейл" value="">
+           </label>
+           <input class="pop-up__form_button submit" type="submit" value="Заказать звонок">
+         </form>
+       </div>
+
+
+
+
+      <section class="first-screen">
+            <div class="fixed-container">
+              <div class="first-screen__photo-wrapper">
+                <img src="img/mann.png" alt="man" class="man">
+              </div>
+              <div class="first-screen__info">
+                <h1 class="h h--1">Дмитрий Алексеев</h1>
+                 <p class="first-screen__info-describe">Frontend-разработчик и веб-вкрстальщик</p>
+
+               <a href="#second-screen__name" class="button button--red">Узнать больше</a>
+
+              </div>
+        </div>
+      </section>
+
+
+              <section class="second-screen center">
+                <div class="fixed-container">
+                  <h2 id="second-screen__name" class="h h--2">Что я делаю</h2>
+
+                   <div class="second-screen__info">
+
+                    <div class="second-screen__info--first second-screen__item-position">
+                      Вёрстка лендинг-страниц <br> и сайтов любой сложности
+                    </div>
+                    <div class="second-screen__info--second second-screen__item-position">
+                      Адаптивная верстка под все <br> браузеры и устройства
+                    </div>
+                    <div class="second-screen__info--third second-screen__item-position">
+                      Frontend-разработка <br> и програмирование
+                    </div>
+                    <div class="second-screen__info--forth second-screen__item-position">
+                      Исправление и доработка <br> существующей верстки
+                    </div>
+
+                   </div>
+
+                  <a href="#forth-screen" class="button button--red">Узнать стоимость</a>
+                </div>
+              </section>
+
+
+             <section class="third-screen center">
+              <div class="fixed-container">
+                <h2 id="third-screen__name" class="h h--2">Примеры моих работ</h2>
+
+             <div class="swiper swiper-container slider">
+        <button class="slider__button slider__button--prev swiper-button-prev" aria-label="Предыдущий слайд"></button>
+        <button class="slider__button slider__button--next swiper-button-next" aria-label="Следующий слайд"></button>
+
+
+             <div class="swiper-wrapper slider__list">
+
+              <div class="swiper-slide slide"><img src="img/malutka.png" alt="1" class="slide__desc">
+              <p class="__desc">Сайт магазина детской одежды</p></div>
+              <div class="swiper-slide slide"><img src="img/malutka.png" alt="2" class="slide__desc">
+              <p class="__desc">Сайт магазина детской одежды</p></div>
+              <div class="swiper-slide slide"><img src="img/malutka.png" alt="3" class="slide__desc">
+              <p class="__desc">Сайт магазина детской одежды</p></div>
+              <div class="swiper-slide slide"><img src="img/malutka.png" alt="4" class="slide__desc">
+              <p class="__desc">Сайт магазина детской одежды</p></div>
+              <div class="swiper-slide slide"><img src="img/malutka.png" alt="5" class="slide__desc">
+              <p class="__desc">Сайт магазина детской одежды</p></div>
+          </div>
+
+          <div class="swiper-pagination slider__button--bottom"></div>
+       </div>
+
+
+     <!-- сделать ссылку вверх на хедер -->
+                <a href="#header" class="button button--red button--pop-up">Заказать проект</a>
+              </div>
+                <!-- <h2>Примеры моих работ</h2>
+                <button type="button" name="button" class="third-screen__slide-button_left"></button>
+                <button type="button" name="button" id="more" class="button button-red">Заказать проэкт</button> -->
+            </section>
+
+             <section class="forth-screen position">
+                   <div class="fixed-container">
+                     <p id="forth-screen" class="forth-screen__info">
+                     Адаптивная верстка под все устройства <br>
+                     и&nbsp;браузера от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа&#42
+                    </p>
+
+                    <div class="forth-screen__decor" aria-hidden="true">
+                      <p class="forth-screen__first-decor decor">{ }</p>
+                      <p class="forth-screen__second-decor decor">#</p>
+                      <p class="forth-screen__third-decor decor"> / </p>
+                      <p class="forth-screen__fourth-decor decor">{ }</p>
+                    </div>
+
+                    <p class="forth-screen__info-desctibe">
+                     &#42Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально,<br> в&nbsp;зависимости от&nbsp;сложности задач.
+                    </p>
+
+                   </div>
+             </section>
+
+                <!-- </div> -->
+</main>
+
+
+
+<footer>
+<div class="fixed-container footer">
+
+  <ul class="footer-menu footer-item">
+    <li><a href="#second-screen__name" class="footer-menu__link">Услуги</a></li>
+    <li><a href="#third-screen__name" class="footer-menu__link">Портфолио</a></li>
+    <li><a href="#forth-screen" class="footer-menu__link">Стоимость</a></li>
+  </ul>
+
+ <ul class="footer-contacts footer-item">
+  <li><a href="tel:+7((499)955-55-77" class="footer-contacts__item footer-contacts__item--phone item-position">
+    +7 (499) 995-55-55</a></li>
+  <li><a href="mailto:dmitry@alekseev.com" class="footer-contacts__item footer-contacts__item--mail item-position">
+  dmitry@alekseev.com</a></li>
+ </ul>
+
+  <div class="footer__social-links footer-item">
+    <!-- сделать ссылку вверх на хедер -->
+    <button type="button" name="button" class="button button--transperent button--pop-up">Заказать звонок</button>
+    <a href="#" class="f"></a>
+      <ul class="social-links">
+        <li><a href="https://vk.com" class="social-links__item social-links__item--vk item-position" aria-label="vk" ></a></li>
+        <li><a href="https://www.facebook.com" class="social-links__item social-links__item--f item-position" aria-label="facebook"></a></li>
+        <li><a href="https://twitter.com" class="social-links__item social-links__item--twitter item-position" aria-label="twitter"></a></li>
+        <li><a href="https://www.instagram.com" class="social-links__item social-links__item--instagram item-position" aria-label="instagram"></a></li>
+        <!-- </div> -->
+      </ul>
+  </div>
+</div>
+
+<p class="all-rights">&copy;Дмитрий Алексеев, 2016-2018</p>
+
+</footer>
+
+
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+   // Optional parameters
+   loop: true,
+   slidesPerView: 1,
+   spaceBetween: 10,
+   breakpoints: {
+     800: {
+       slidesPerView: 2,
+       spaceBetween: 30
+     },
+     1020: {
+       slidesPerView: 3,
+       spaceBetween: 30
+     }
+   },
+   navigation: {
+     nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',
+   },
+   pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true
+  },
+});
+
+</script>
+  </body>
+</html>
